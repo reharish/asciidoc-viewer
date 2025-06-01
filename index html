@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AsciiDoc Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/asciidoctor.js/3.0.3/asciidoctor.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <section class="editor-section">
+      <label for="editor">AsciiDoc Input</label>
+      <textarea id="editor" placeholder="Type AsciiDoc here..."></textarea>
+    </section>
+    <section class="preview-section">
+      <h2>Preview</h2>
+      <div id="preview"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

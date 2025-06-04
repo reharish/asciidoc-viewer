@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Extract the title and author from the AsciiDoc input
       const lines = adoc.split('\n');
       const title = lines[0].startsWith('= ') ? lines[0].substring(2) : 'Untitled';
-      const author = (lines[1].length && !lines[1].startsWith("==") && !lines[1].startsWith(":")) ? lines[1]: '';
+      const author = (lines[1] && lines[1].length && !lines[1].startsWith("==") && !lines[1].startsWith(":")) ? lines[1]: '';
 
       // Create title and author elements
       const titleElement = `<h1>${title}</h1>`;
